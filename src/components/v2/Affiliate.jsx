@@ -44,6 +44,9 @@ const Affiliate = (props) => {
                             </div>
                         </div>
                     ))}
+                    <div className="card-items-affiliate">
+                        <span>Test</span>
+                    </div>
                 </div>
             </div>
         </div>
