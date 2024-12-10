@@ -266,9 +266,9 @@ const Transfer = (props) => {
                         >
                             Transfer to
                         </label>
-                        <div className="flex items-center bg-white shadow border rounded w-full">
+                        <div className="flex items-center w-full">
                             <input
-                                className="bg-white text-dark w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-white w-full py-2 px-3 text-gray-700"
                                 id="tokenBalance"
                                 type="text"
                                 placeholder="Display name or wallet address"

@@ -283,6 +283,15 @@
   padding-bottom: 10px;
 }
 
+input {
+  border-radius: 20px!important;
+  padding-right: 20px!important;
+}
+
+select {
+  border-radius: 20px!important;
+}
+
 .tokenBalance {
   width: 100% !important;
 }
