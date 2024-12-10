@@ -171,7 +171,7 @@ const Home = () => {
                                     onChange={() => handleCheckboxChange(id)}
                                 />
                                 <span className={id}></span>
-                                <img src={`../src/assets/icon_menu/${icon}`} alt={id} />
+                                <img src={`/assets/icon_menu/${icon}`} alt={id} />
                             </label>
                         ))}
                     </div>
@@ -209,7 +209,7 @@ const Home = () => {
                     root={root}
                 />}
 
-            {selectedCheckbox === 'net' && <Net 
+            {selectedCheckbox === 'net' && <Net
                 selectedNetTab={selectedNetTab}
             />}
 
@@ -255,7 +255,7 @@ const Home = () => {
                                 onChange={() => handleCheckboxChange(id)}
                             />
                             <span className={id}></span>
-                            <img src={`../src/assets/icon_menu/${icon}`} alt={id} />
+                            <img src={`/assets/icon_menu/${icon}`} alt={id} />
                         </label>
                     ))}
                 </div>
