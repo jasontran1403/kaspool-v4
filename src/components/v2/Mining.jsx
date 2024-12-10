@@ -165,7 +165,7 @@ const Mining = (props) => {
                         />
                     </div>
 
-                    <div className="card-content-transaction">
+                    <div className="card-content-transaction mb-[20px]">
                         <label
                             className="block text-white text-sm font-bold"
                             htmlFor="packageName"
@@ -186,10 +186,11 @@ const Mining = (props) => {
                         </select>
                     </div>
 
-                    <div className="flex items-center justify-between">
-                        {networkSelected == 1 ? <MineOption2 walletAddress={props.usdtWallet} walletReceiver={props.bep20} amount={miningAmount} connectedBalance={props.connectedBalance} /> : <button onClick={buyPackage} className="button-89 mt-[20px] mb-[20px] pt-[20px] pb-[20px]">Mining</button>}
-                    </div>
+
                 </div>
+            </div>
+            <div className="flex items-center justify-between">
+                {networkSelected == 1 ? <MineOption2 walletAddress={props.usdtWallet} walletReceiver={props.bep20} amount={miningAmount} connectedBalance={props.connectedBalance} /> : <button onClick={buyPackage} className="button-89 mt-[20px] mb-[20px] pt-[20px] pb-[20px]">Mining</button>}
             </div>
         </div>
     )

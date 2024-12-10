@@ -171,17 +171,16 @@ const User = (props) => {
               type="text" value={props.leftRefLink} onClick={() => handleCopyRefLink(props.leftRefLink, "left")} readOnly />
           </div>
 
-          <div className="card-content-transaction info-details-item pb-[10px]">
+          <div className="card-content-transaction info-details-item mb-[20px]">
             <label className="text-white">Right reflink</label>
             <input
               className="cursor-pointer shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" value={props.rightRefLink} onClick={() => handleCopyRefLink(props.rightRefLink, "right")} readOnly />
           </div>
-
-          <div className="text-center pt-[20px] pb-[20px]">
-            <button className="button-89" onClick={handleUpdateInfo} role="button">Update Info</button>
-          </div>
         </div>
+      </div>
+      <div className="text-center pt-[20px] pb-[20px]">
+        <button className="button-89" onClick={handleUpdateInfo} role="button">Update Info</button>
       </div>
     </div>
   )

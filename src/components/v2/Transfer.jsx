@@ -283,7 +283,7 @@ const Transfer = (props) => {
                             className="block text-white text-sm font-bold mb-2"
                             htmlFor="tokenBalance"
                         >
-                            Display name of receiver
+                            Display name of Receiver
                         </label>
                         <div className="w-full">
                             <input
@@ -296,7 +296,7 @@ const Transfer = (props) => {
                         </div>
                     </div>
 
-                    <div className="card-content-transaction">
+                    <div className="card-content-transaction mb-[20px]">
                         <label className="block text-white text-sm font-bold mb-2" htmlFor="tokenBalance">
                             Amount
                         </label>
@@ -311,11 +311,13 @@ const Transfer = (props) => {
                                 }}
                             /></div>
                     </div>
-                    <div className="flex items-center justify-between">
-                        <button onClick={handleCreateTransfer} className="button-89 pt-[20px] pb-[20px]">Transfer</button>
-                    </div>
+
                 </div>
+                
             </div>
+            <div className="flex items-center justify-between">
+                    <button onClick={handleCreateTransfer} className="button-89 mt-[20px] pb-[20px]">Transfer</button>
+                </div>
         </div>
     )
 };

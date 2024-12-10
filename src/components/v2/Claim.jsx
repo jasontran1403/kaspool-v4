@@ -100,7 +100,7 @@ const Claim = (props) => {
                 <div className="card-items">
                     {["Direct Commission", "Binary Commission", "Leader Commission", "POP Commission", "Daily Reward", "Transfer Wallet"].map(
                         (title) => (
-                            <div key={title} className="card-content">
+                            <div key={title} className="card-content pt-[10px] pb-[10px]">
                                 <h4>{title}</h4>
                                 {title === "Direct Commission" && <p className="italic">{formatNumber(props.directCommission)} USDT</p>}
                                 {title === "Binary Commission" && <p className="italic">{formatNumber(props.binaryCommission)} USDT</p>}
@@ -111,9 +111,10 @@ const Claim = (props) => {
                             </div>
                         )
                     )}
-                    <button className="button-89 pt-[20px] pb-[20px]" onClick={handleClaim} >Claim All</button>
+                    
                 </div>
             </div>
+            <button className="button-89 pt-[20px] pb-[20px]" onClick={handleClaim} >Claim All</button>
         </div>
     )
 };

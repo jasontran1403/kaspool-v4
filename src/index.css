@@ -288,7 +288,7 @@
 }
 
 .card-content-transaction label {
-  width: 500px;
+  min-width: 30svw;
 }
 
 .card-container .card-items .card-content-down {

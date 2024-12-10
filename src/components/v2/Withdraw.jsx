@@ -368,19 +368,19 @@ const Withdraw = (props) => {
                                     {currency}
                                 </span>
                             </div>
-                            {networkSelected == 2 && <small style={{ fontStyle: "italic", color: "orangered", textAlign: "right" }}>Current KAS Price 1KAS ~ {kasPrice.toFixed(5)}USDT</small>}
+                            {networkSelected == 2 && <small style={{ fontSize: "12px", fontStyle: "italic", color: "white", textAlign: "right" }}>Current KAS Price 1KAS ~ {kasPrice.toFixed(5)}USDT</small>}
                         </div>
                     </div>
 
-                    <div className="card-content-transaction">
+                    <div className="flex flex-row w-full">
                         <label
-                            className="block text-white text-sm font-bold mb-2"
+                            className="block min-w-[30svw] pt-[5px] text-white text-sm font-bold mb-2"
                             htmlFor="tokenBalance"
                         >
                             Fee
                         </label>
 
-                        <div className="flex flex-col w-full">
+                        <div className="flex flex-col w-full mb-[20px]">
                             <div className="relative">
                                 <input
                                     className="bg-gray-400 text-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -395,13 +395,15 @@ const Withdraw = (props) => {
                                     {currency}
                                 </span>
                             </div>
-                            <small style={{ fontStyle: "italic", color: "orangered", textAlign: "right" }}>Fee 2% of total withdrawal amount, min is 1.00USDT</small>
+                            <small style={{ fontSize: "12px", fontStyle: "italic", color: "white", textAlign: "right" }}>Fee 2% of total withdrawal amount, min is 1.00USDT</small>
                         </div>
                     </div>
-                    <div className="flex items-center justify-between">
-                        <button onClick={handleWithdraw} className="button-89 pt-[20px] pb-[20px]">Withdraw</button>
-                    </div>
+
                 </div>
+
+            </div>
+            <div className="flex items-center justify-between">
+                <button onClick={handleWithdraw} className="button-89 mt-[20px] pb-[20px]">Withdraw</button>
             </div>
         </div>
     )
