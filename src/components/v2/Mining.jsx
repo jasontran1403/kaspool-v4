@@ -189,8 +189,8 @@ const Mining = (props) => {
 
                 </div>
             </div>
-            <div className="flex items-center justify-between">
-                {networkSelected == 1 ? <MineOption2 walletAddress={props.usdtWallet} walletReceiver={props.bep20} amount={miningAmount} connectedBalance={props.connectedBalance} /> : <button onClick={buyPackage} className="button-89 mt-[20px] mb-[20px] pt-[20px] pb-[20px]">Mining</button>}
+            <div className="flex items-center justify-center">
+                {networkSelected == 1 ? <MineOption2 walletAddress={props.usdtWallet} walletReceiver={props.bep20} amount={miningAmount} connectedBalance={props.connectedBalance} /> : <button onClick={buyPackage} className="button-89 mt-[10px] mb-[20px] pt-[10px] pb-[20px]">Mining</button>}
             </div>
         </div>
     )

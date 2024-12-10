@@ -114,7 +114,7 @@ const Claim = (props) => {
                     
                 </div>
             </div>
-            <button className="button-89 pt-[20px] pb-[20px]" onClick={handleClaim} >Claim All</button>
+            <button className="button-89 mt-[10px] pb-[20px]" onClick={handleClaim} >Claim All</button>
         </div>
     )
 };

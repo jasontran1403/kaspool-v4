@@ -15,9 +15,10 @@ const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
                     <div
                         key={tab}
                         className={`tab 
-        ${selectedTab === "User Information" ? "user-nav" : ""}
-        ${selectedTab === tab && ["Affiliate", "Binary", "Direct"].includes(tab) ? "affiliate-nav" : ""}
-        ${selectedTab === tab ? "expanded" : ""}`}
+                            ${selectedTab === "User Information" ? "user-nav" : ""}
+                            ${selectedTab === tab && ["Affiliate", "Binary", "Direct"].includes(tab) ? "affiliate-nav" : ""}
+                            ${selectedTab === tab && ["Mining", "Claim", "Withdraw", "Transfer"].includes(tab) ? "his-nav" : ""}
+                            ${selectedTab === tab ? "expanded" : ""}`}
                         onClick={() => handleTabClick(tab, type)}
                     >
                         <img

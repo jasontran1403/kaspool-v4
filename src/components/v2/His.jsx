@@ -5,10 +5,10 @@ import TransactionTableV2Mining from "../TransactionTableV2Mining";
 import TransactionTableV2Withdraw from "../TransactionTableV2Withdraw";
 import TransactionTableV2Claim from "./TransactionTableV2Claim";
 import TransactionTableV2Transfer from "./TransactionTableV2Transfer";
-const TABLE_HEAD_MINING = ["System Code", "Date", "Amount", "Status"];
-const TABLE_HEAD_CLAIM = ["System Code", "Date", "Amount", "Status"];
-const TABLE_HEAD_WITHDRAW = ["System Code", "Date", "Amount", "Status", "To"];
-const TABLE_HEAD_TRANSFER = ["System Code", "Date", "Amount", "Status", "Note"];
+const TABLE_HEAD_MINING = ["Transaction", "Date", "Amount", "Status"];
+const TABLE_HEAD_CLAIM = ["Transaction", "Date", "Amount", "Status"];
+const TABLE_HEAD_WITHDRAW = ["Transaction", "Date", "Amount", "Status"];
+const TABLE_HEAD_TRANSFER = ["Transaction", "Date", "Amount", "Status"];
 
 const His = (props) => {
   const [listTransaction, setListTransaction] = useState([]);
@@ -97,7 +97,7 @@ const His = (props) => {
     <>
       {props.selectedHisTab === "Mining" && (
         <TransactionTableV2Mining
-          className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
+          className="w-full flex justify-center items-center"
           TABLE_HEAD={TABLE_HEAD_MINING}
           TABLE_ROWS={listTransaction}
         />
@@ -105,7 +105,7 @@ const His = (props) => {
 
       {props.selectedHisTab === "Claim" && (
         <TransactionTableV2Claim
-          className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
+          className="w-full flex justify-center items-center"
           TABLE_HEAD={TABLE_HEAD_CLAIM}
           TABLE_ROWS={listClaim}
         />
@@ -113,7 +113,7 @@ const His = (props) => {
 
       {props.selectedHisTab === "Withdraw" && (
         <TransactionTableV2Withdraw
-          className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
+          className="w-full flex justify-center items-center"
           TABLE_HEAD={TABLE_HEAD_WITHDRAW}
           TABLE_ROWS={listWithdraw}
         />
@@ -121,7 +121,7 @@ const His = (props) => {
 
       {props.selectedHisTab === "Transfer" && (
         <TransactionTableV2Transfer
-          className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
+          className="w-full flex justify-center items-center"
           TABLE_HEAD={TABLE_HEAD_TRANSFER}
           TABLE_ROWS={listTransfer}
         />

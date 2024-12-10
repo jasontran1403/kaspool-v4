@@ -23,7 +23,9 @@
 }
 
 .affiliate-nav {
-  width: 200px!important;
+  width: 50svw!important;
+  margin-left: 10px!important;
+  margin-right: 10px!important;
 }
 
 .page-container > :last-child {
@@ -32,7 +34,7 @@
 
 .card-blue-green {
   background: transparent;
-  padding: 20px;
+  padding: unset;
 }
 
 .top-container {
@@ -86,20 +88,28 @@
   border-radius: 20px;
   margin: 0 auto;
   height: 40px;
-  width: 60px;
+  width: 40px;
   text-align: center;
 }
 
 .tab.expanded {
-  background-color: rgb(63, 52, 59);
+  background-color: rgb(0, 0, 0);
   animation: width-animation .45 ease-in-out forwards;
 }
 
 .user-nav {
-  width: 200px!important;
-  justify-content: flex-start;
-  padding-left: 20px;
-  width: 100%;
+  width: 86svw !important;
+  height: 45px !important;
+  border-radius: 50px;
+  padding-right: 50px;
+}
+
+.his-nav {
+  width: 45svw !important;
+  height: 45px !important;
+  border-radius: 50px;
+  padding-right: 50px;
+  padding-left: 30px;
 }
 
 .user-nav-text {
@@ -107,29 +117,30 @@
 }
 
 .text-green {
-  color: white!important;
-  font-weight: bolder;
-  background-color: green;
-  padding: 10px;
-  border-radius: 20px;
+  color: green!important;
 }
 
+.status {
+  padding-left: 50px;
+}
+
+.input-white {
+  border: 1px solid #ccc;
+  color: black!important;
+  background-color: rgb(218, 213, 213);
+}
+
+.input-white:focus {
+  outline: none;
+}
 
 .text-red {
-  color: white!important;
-  font-weight: bolder;
-  background-color: rgb(245, 110, 60);
-  padding: 10px;
-  border-radius: 20px;
+  color: rgb(245, 110, 60)!important;
 
 }
 
 .text-yellow {
-  color: white!important;
-  font-weight: bolder;
-  background-color: yellow;
-  padding: 10px;
-  border-radius: 20px;
+  color: yellow!important;
 }
 
 
@@ -283,6 +294,7 @@ input[type="password"] {
   color: white;
 }
 
+
 .button-89,
 .css-8xdgr2 {
   color: #ffffff!important;
@@ -295,11 +307,16 @@ input[type="password"] {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5)!important;
   backdrop-filter: blur(5px)!important;
   background: rgba(255, 255, 255, 0.1)!important;
-  height: 60px!important;
+  height: 45px!important;
   display: flex!important;
   flex-direction: row!important;
   justify-content: center!important;
   align-items: center!important;
+}
+
+.css-8xdgr2 {
+  margin-top: 10px!important;
+  min-width: 140px!important;
 }
 
 .button-89:hover,

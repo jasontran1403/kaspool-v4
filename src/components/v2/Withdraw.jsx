@@ -403,7 +403,7 @@ const Withdraw = (props) => {
 
             </div>
             <div className="flex items-center justify-between">
-                <button onClick={handleWithdraw} className="button-89 mt-[20px] pb-[20px]">Withdraw</button>
+                <button onClick={handleWithdraw} className="button-89 mt-[10px] pb-[20px]">Withdraw</button>
             </div>
         </div>
     )

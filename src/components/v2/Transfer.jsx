@@ -316,7 +316,7 @@ const Transfer = (props) => {
                 
             </div>
             <div className="flex items-center justify-between">
-                    <button onClick={handleCreateTransfer} className="button-89 mt-[20px] pb-[20px]">Transfer</button>
+                    <button onClick={handleCreateTransfer} className="button-89 mt-[10px] pb-[20px]">Transfer</button>
                 </div>
         </div>
     )

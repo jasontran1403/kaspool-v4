@@ -122,14 +122,14 @@ const User = (props) => {
     <div className="fadeIn">
       <div className="card-container-internal">
         <div className="card-items">
-          <div className="card-content-transaction info-details-item relative pt-[20px] pb-[20px] border-b border-gray-300">
+          <div className="card-content-transaction info-details-item relative pt-[10px] pb-[20px] border-b border-gray-300">
             <label className="mb-[10px] text-white">Name</label>
             <input
               className="mb-[10px] shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" placeholder="Display name, default is xxxx...xxxx" value={displayName} onChange={(e) => setDisplayName(e.target.value)} />
           </div>
 
-          <div className="card-content-transaction info-details-item pt-[20px] pb-[10px]">
+          <div className="card-content-transaction info-details-item pt-[30px] pb-[10px]">
             <label className="text-white">Connected Wallet Address</label>
             <input
               className="rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -179,8 +179,8 @@ const User = (props) => {
           </div>
         </div>
       </div>
-      <div className="text-center pt-[20px] pb-[20px]">
-        <button className="button-89" onClick={handleUpdateInfo} role="button">Update Info</button>
+      <div className="text-center pt-[10px] pb-[20px]">
+        <button className="button-89" onClick={handleUpdateInfo} role="button">Update</button>
       </div>
     </div>
   )

@@ -143,11 +143,25 @@ const Home = () => {
                     <div className="wallet-container">
                         <TrustWalletConnect />
                     </div>
-                    <img
-                        src={logo}
-                        alt="kaspool"
-                        className="flex lg:w-[120px] lg:h-[100px] w-[60px] h-[40px]"
-                    />
+                    {rank > 0 ?
+                        <div className="relative flex flex-row">
+                            <img
+                                src={`/${rank}.png`}
+                                alt="kaspool"
+                                style={{ width: "70px", height: "70px", marginTop: "10px" }}
+                            />
+                            {rank > 0 && (
+                                <span className="absolute top-[5px] right-[5px] bg-red-500 text-white text-xs font-bold rounded-full px-2 py-1">
+                                    {rank}
+                                </span>
+                            )}
+                        </div>
+                        :
+                        <img
+                            src={logo}
+                            alt="kaspool"
+                            className="flex lg:w-[120px] lg:h-[100px] w-[60px] h-[40px]"
+                        />}
                 </div>
 
                 <HashLoader color="#36d7b7" loading={loading} size={50} />
@@ -188,7 +202,7 @@ const Home = () => {
                 <div className="wallet-container">
                     <TrustWalletConnect />
                 </div>
-                {selectedCheckbox === "das" ?
+                {rank > 0 ?
                     <div className="relative flex flex-row">
                         <img
                             src={`/${rank}.png`}
