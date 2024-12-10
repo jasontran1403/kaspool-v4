@@ -222,7 +222,7 @@ const Home = () => {
                         className="flex lg:w-[120px] lg:h-[100px] w-[60px] h-[40px]"
                     />}
             </div>
-            {selectedCheckbox === 'user' && <SubNav listNav={listUserNav} selectedTab={selectedUserTab} handleTabClick={handleTabClick} type={0} />}
+            {/* {selectedCheckbox === 'user' && <SubNav listNav={listUserNav} selectedTab={selectedUserTab} handleTabClick={handleTabClick} type={0} />} */}
             {selectedCheckbox === 'net' && <SubNav listNav={listNetNav} selectedTab={selectedNetTab} handleTabClick={handleTabClick} type={1} />}
             {selectedCheckbox === 'das' && <SubNav listNav={listDasNav} selectedTab={selectedDasTab} handleTabClick={handleTabClick} type={2} />}
             {selectedCheckbox === 'his' && <SubNav listNav={listHisNav} selectedTab={selectedHisTab} handleTabClick={handleTabClick} type={3} />}
