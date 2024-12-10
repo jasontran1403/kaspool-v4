@@ -10,6 +10,18 @@
   gap: 5px;
 }
 
+.page-container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  min-height: 100svh;
+  width: 100svw;
+  margin-top: 0 auto;
+  background: url(../src/assets/background/bg12.jpg) center center / cover no-repeat;
+}
+
 .page-container > :last-child {
   margin-top: auto; /* Đẩy phần tử cuối xuống đáy */
 }
@@ -495,7 +507,7 @@ select {
 }
 
 .user {
-  background: url(/icon_menu/das_f.png);
+  background: url(/icon_menu/user_f.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

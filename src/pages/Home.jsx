@@ -11,11 +11,6 @@ import Down from "../components/v2/Down";
 import SubNav from "../components/v2/SubNav";
 import { API_ENDPOINT } from "../constants";
 import { MultiTabDetectContext } from "../components/MultiTabDetectContext";
-import user from "../assets/icon_menu/user_icon.png";
-import net from "../assets/icon_menu/net_icon.png";
-import das from "../assets/icon_menu/das_icon.png";
-import his from "../assets/icon_menu/his_icon.png";
-import down from "../assets/icon_menu/down_icon.png";
 
 const listUserNav = ["User Information"];
 const listDasNav = ["Balance", "Mining", "Claim", "Withdraw", "Transfer"];
@@ -142,7 +137,7 @@ const Home = () => {
 
     if (loading) {
         return (
-            <div className="page-container">
+            <div className="page-container-2">
                 {/* Top Container */}
                 <div className="top-container">
                     <div className="wallet-container">
@@ -193,11 +188,18 @@ const Home = () => {
                 <div className="wallet-container">
                     <TrustWalletConnect />
                 </div>
-                <img
-                    src={logo}
-                    alt="kaspool"
-                    className="flex lg:w-[120px] lg:h-[100px] w-[60px] h-[40px]"
-                />
+                {selectedCheckbox === "das" ?
+                    <img
+                        src={`/${rank}.png`}
+                        alt="kaspool"
+                        style={{ width: "100px", height: "100px" }}
+                    />
+                    :
+                    <img
+                        src={logo}
+                        alt="kaspool"
+                        className="flex lg:w-[120px] lg:h-[100px] w-[60px] h-[40px]"
+                    />}
             </div>
             {selectedCheckbox === 'user' && <SubNav listNav={listUserNav} selectedTab={selectedUserTab} handleTabClick={handleTabClick} type={0} />}
             {selectedCheckbox === 'net' && <SubNav listNav={listNetNav} selectedTab={selectedNetTab} handleTabClick={handleTabClick} type={1} />}
@@ -245,7 +247,7 @@ const Home = () => {
                     kaspaWallet={kaspaWallet}
                 />}
 
-            {selectedCheckbox === 'his' && <His 
+            {selectedCheckbox === 'his' && <His
                 selectedHisTab={selectedHisTab}
             />}
 
