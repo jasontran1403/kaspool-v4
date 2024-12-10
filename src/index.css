@@ -441,7 +441,7 @@
 }
 
 .user {
-  background: url(../src/assets/icon_menu/user_f.png);
+  background: url(/icon_menu/das_f.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -449,7 +449,7 @@
 }
 
 .net {
-  background: url(../src/assets/icon_menu/net_f.png);
+  background: url(/icon_menu/net_f.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -457,7 +457,7 @@
 }
 
 .das {
-  background: url(../src/assets/icon_menu/das_f.png);
+  background: url(/icon_menu/das_f.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -465,7 +465,7 @@
 }
 
 .his {
-  background: url(../src/assets/icon_menu/his_f.png);
+  background: url(/icon_menu/his_f.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -473,7 +473,7 @@
 }
 
 .down {
-  background: url(../src/assets/icon_menu/down_f.png);
+  background: url(/icon_menu/down_f.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

@@ -11,6 +11,12 @@ import Down from "../components/v2/Down";
 import SubNav from "../components/v2/SubNav";
 import { API_ENDPOINT } from "../constants";
 import { MultiTabDetectContext } from "../components/MultiTabDetectContext";
+import user from "../assets/icon_menu/user_icon.png";
+import net from "../assets/icon_menu/net_icon.png";
+import das from "../assets/icon_menu/das_icon.png";
+import his from "../assets/icon_menu/his_icon.png";
+import down from "../assets/icon_menu/down_icon.png";
+
 
 const listDasNav = ["Balance", "Mining", "Claim", "Withdraw", "Transfer"];
 const listHisNav = ["Mining", "Claim", "Withdraw", "Transfer"];
@@ -171,7 +177,7 @@ const Home = () => {
                                     onChange={() => handleCheckboxChange(id)}
                                 />
                                 <span className={id}></span>
-                                <img src={`/assets/icon_menu/${icon}`} alt={id} />
+                                <img src={`/icon_menu/${icon}`} alt={id} />
                             </label>
                         ))}
                     </div>
@@ -255,7 +261,7 @@ const Home = () => {
                                 onChange={() => handleCheckboxChange(id)}
                             />
                             <span className={id}></span>
-                            <img src={`/assets/icon_menu/${icon}`} alt={id} />
+                            <img src={`/icon_menu/${icon}`} alt={id} />
                         </label>
                     ))}
                 </div>

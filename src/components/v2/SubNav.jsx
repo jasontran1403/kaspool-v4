@@ -13,7 +13,7 @@ const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
                     >
                         <img
                             className={`icon-${tab.toLowerCase()}`}
-                            src={`../src/assets/iconmenu/${selectedTab === tab ? "white" : "black"}/${formatString(tab).toLowerCase()}.png`}
+                            src={`/iconmenu/${selectedTab === tab ? "white" : "black"}/${formatString(tab).toLowerCase()}.png`}
                             alt={tab}
                         />
                         <span className="text">{tab}</span>
