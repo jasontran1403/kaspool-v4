@@ -1,12 +1,17 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   height: auto;
   min-height: 100svh;
   width: 100svw;
   background: url(../src/assets/background/bg12.jpg) center center / cover no-repeat;
+  gap: 20px;
+}
+
+.page-container > :last-child {
+  margin-top: auto; /* Đẩy phần tử cuối xuống đáy */
 }
 
 .top-container {
@@ -258,7 +263,6 @@
   align-items: center;
   gap: 50px;
   height: 100%;
-  padding: 5%;
   animation: fadeIn-animation 0.3s ease-in-out forwards;
 }
 
