@@ -3,13 +3,10 @@ import {
   prepareContractCall,
   prepareTransaction,
   toWei,
-  getContract
+  getContract,
 } from "thirdweb";
 import { bsc } from "thirdweb/chains";
-import {
-  TransactionButton,
-  useActiveAccount,
-} from "thirdweb/react";
+import { TransactionButton, useActiveAccount } from "thirdweb/react";
 import TrustWalletConnect from "./TrustWalletConnect";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -29,7 +26,12 @@ const contract = getContract({
   client,
 });
 
-const MineOption2 = ({ walletAddress, amount, connectedBalance, walletReceiver }) => {
+const MineOption2 = ({
+  walletAddress,
+  amount,
+  connectedBalance,
+  walletReceiver,
+}) => {
   const account = useActiveAccount();
 
   const handleDirectTransferMining = (hash) => {
@@ -72,58 +74,55 @@ const MineOption2 = ({ walletAddress, amount, connectedBalance, walletReceiver }
           autoClose: 1500,
         });
       });
-  }
+  };
 
   return (
-    <div className="flex w-full">
-      <div className="m-auto w-full text-center pb-[20px] pt-[20px]">
-        {account && (
-          <>
-            <TransactionButton
-              transaction={() => {
-                // Create a transaction object and return it
-                if (amount <= 1) {
-                  toast.error("Mining amount must be greater than $1", {
-                    position: "top-right",
-                    autoClose: 1800
-                  })
-                  return;
-                }
-                if (amount > connectedBalance) {
-                  toast.error("USDT BEP20 balance insuffient", {
-                    position: "top-right",
-                    autoClose: 1800
-                  })
-                  return;
-                }
-                if (walletReceiver === "" && walletAddress === "") {
-                  return;
-                }
-                const tx = prepareContractCall({
-                  contract,
-                  method: "function transfer(address to, uint256 value)",
-                  params: [walletReceiver, toWei(amount)],
-                });
-                return tx;
-              }}
-
-              onTransactionConfirmed={(receipt) => {
-                handleDirectTransferMining(receipt.transactionHash);
-              }}
-              onError={(error) => {
-                toast.error(error, {
+    <div>
+      {account && (
+        <>
+          <TransactionButton style={{ marginTop: "25px" }}
+            transaction={() => {
+              // Create a transaction object and return it
+              if (amount <= 1) {
+                toast.error("Mining amount must be greater than $1", {
                   position: "top-right",
-                  autoClose: 1800
-                })
-              }}
-            >
-              Mining
-            </TransactionButton>
-          </>
-        )}
-      </div>
+                  autoClose: 1800,
+                });
+                return;
+              }
+              if (amount > connectedBalance) {
+                toast.error("USDT BEP20 balance insuffient", {
+                  position: "top-right",
+                  autoClose: 1800,
+                });
+                return;
+              }
+              if (walletReceiver === "" && walletAddress === "") {
+                return;
+              }
+              const tx = prepareContractCall({
+                contract,
+                method: "function transfer(address to, uint256 value)",
+                params: [walletReceiver, toWei(amount)],
+              });
+              return tx;
+            }}
+            onTransactionConfirmed={(receipt) => {
+              handleDirectTransferMining(receipt.transactionHash);
+            }}
+            onError={(error) => {
+              toast.error(error, {
+                position: "top-right",
+                autoClose: 1800,
+              });
+            }}
+          >
+            Mining
+          </TransactionButton>
+        </>
+      )}
     </div>
   );
-}
+};
 
 export default MineOption2;

@@ -239,15 +239,35 @@ input[type="password"] {
   color: #ffffff!important;
 
   padding: calc(.5em + var(--s)) calc(.9em + var(--s))!important;
-  border: 1px solid #ccc;
-
+  border: 1px solid #ccc!important;
   font-size: 16px!important;
-  padding: 20px!important;
+  padding: 20px 50px 20px 50px!important;
   border-radius: 20px!important;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5)!important;
   backdrop-filter: blur(5px)!important;
+  background: rgba(255, 255, 255, 0.1)!important;
+  height: 60px!important;
+  display: flex!important;
+  flex-direction: row!important;
+  justify-content: center!important;
+  align-items: center!important;
 }
 
+.button-89:hover,
+.button-89:focus-visible,
+.css-8xdgr2:hover,
+.css-8xdgr2:focus-visible {
+  --_p: 0px!important;
+  outline-color: var(--color)!important;
+  outline-offset: .05em!important;
+  transform: scale(1.1)!important;
+}
+
+.button-89:active,
+.css-8xdgr2:active {
+  background: var(--color)!important;
+  color: #fff!important;
+}
 
 .fadeIn {
   display: flex;
