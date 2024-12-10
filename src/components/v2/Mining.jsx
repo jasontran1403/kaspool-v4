@@ -156,7 +156,7 @@ const Mining = (props) => {
                             Mining package amount
                         </label>
                         <input
-                            className="bg-white text-dark shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                            className="bg-white text-dark shadow appearance-none   rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
                             id="email"
                             type="number"
                             min={0}
@@ -173,7 +173,7 @@ const Mining = (props) => {
                             Wallet type
                         </label>
                         <select
-                            className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            className=" shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                             id="packageName"
                             value={networkSelected}
                             onChange={(e) => { handleChangeWalletType(e.target.value) }}

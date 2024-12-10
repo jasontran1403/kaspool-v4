@@ -216,7 +216,7 @@ const Withdraw = (props) => {
                         </label>
                         <div className="w-full">
                             <select
-                                className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className=" shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="packageName"
                                 value={networkSelected}
                                 onChange={(e) => setNetworkSelected(e.target.value)}
@@ -238,7 +238,7 @@ const Withdraw = (props) => {
                         </label>
                         <div className="w-full">
                             <input
-                                className="bg-gray-400 text-dark shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-gray-400 text-dark shadow appearance-none   rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="tokenBalance"
                                 type="text"
                                 value={formatNumber(props.usdtBalance)}
@@ -257,7 +257,7 @@ const Withdraw = (props) => {
                         </label>
                         <div className="w-full">
                             <select
-                                className=" shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className=" shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="packageName"
                                 value={networkSelected}
                                 onChange={(e) => setNetworkSelected(e.target.value)}
@@ -279,7 +279,7 @@ const Withdraw = (props) => {
                         </label>
                         <div className="w-full">
                             <input
-                                className="bg-gray-300 text-dark shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-gray-300 text-dark shadow appearance-none   rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="tokenBalance"
                                 type="text"
                                 placeholder="Wallet address that recevive that withdraw order amount"
@@ -297,7 +297,7 @@ const Withdraw = (props) => {
                         </label>
                         <div className="w-full">
                             <input
-                                className="bg-white text-dark shadow appearance-none border  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-white text-dark shadow appearance-none   rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="tokenBalance"
                                 type="text"
                                 placeholder="Wallet address that recevive that withdraw order amount"
@@ -318,7 +318,7 @@ const Withdraw = (props) => {
                         </label>
                         <div className="relative w-full">
                             <input
-                                className="bg-white text-dark shadow appearance-none border rounded w-full py-2 px-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-white text-dark shadow appearance-none  rounded w-full py-2 px-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="tokenBalance"
                                 type="text" // Use "text" to fully control input validation
                                 value={amount}
@@ -356,7 +356,7 @@ const Withdraw = (props) => {
                         <div className="flex flex-col w-full">
                             <div className="relative">
                                 <input
-                                    className="bg-gray-400 text-dark shadow appearance-none border rounded w-full py-2 px-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    className="bg-gray-400 text-dark shadow appearance-none  rounded w-full py-2 px-3 pr-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="tokenBalance"
                                     type="text" // Use "text" to fully control input validation
                                     value={estimateReceive}
@@ -383,7 +383,7 @@ const Withdraw = (props) => {
                         <div className="flex flex-col w-full mb-[20px]">
                             <div className="relative">
                                 <input
-                                    className="bg-gray-400 text-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    className="bg-gray-400 text-dark shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="tokenBalance"
                                     type="text" // Use "text" to fully control input validation
                                     value={fee}

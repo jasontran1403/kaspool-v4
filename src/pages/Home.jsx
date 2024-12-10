@@ -17,7 +17,7 @@ import das from "../assets/icon_menu/das_icon.png";
 import his from "../assets/icon_menu/his_icon.png";
 import down from "../assets/icon_menu/down_icon.png";
 
-
+const listUserNav = ["User Information"];
 const listDasNav = ["Balance", "Mining", "Claim", "Withdraw", "Transfer"];
 const listHisNav = ["Mining", "Claim", "Withdraw", "Transfer"];
 const listNetNav = ["Affiliate", "Binary", "Direct"];
@@ -30,7 +30,7 @@ const Home = () => {
     );
     const [selectedCheckbox, setSelectedCheckbox] = useState("das");
     const [loading, setLoading] = useState(false);
-
+    const [selectedUserTab, setSelectedUserTab] = useState("User Information");
     const [selectedNetTab, setSelectedNetTab] = useState("Affiliate");
     const [selectedDasTab, setSelectedDasTab] = useState("Balance");
     const [selectedHisTab, setSelectedHisTab] = useState("Mining");
@@ -199,6 +199,7 @@ const Home = () => {
                     className="flex lg:w-[120px] lg:h-[100px] w-[60px] h-[40px]"
                 />
             </div>
+            {selectedCheckbox === 'user' && <SubNav listNav={listUserNav} selectedTab={selectedUserTab} handleTabClick={handleTabClick} type={0} />}
             {selectedCheckbox === 'net' && <SubNav listNav={listNetNav} selectedTab={selectedNetTab} handleTabClick={handleTabClick} type={1} />}
             {selectedCheckbox === 'das' && <SubNav listNav={listDasNav} selectedTab={selectedDasTab} handleTabClick={handleTabClick} type={2} />}
             {selectedCheckbox === 'his' && <SubNav listNav={listHisNav} selectedTab={selectedHisTab} handleTabClick={handleTabClick} type={3} />}

@@ -227,7 +227,7 @@ const Transfer = (props) => {
                         </label>
                         <div className="w-full">
                             <select
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="packageName"
                                 value={networkSelected}
                                 onChange={(e) => {
@@ -249,7 +249,7 @@ const Transfer = (props) => {
                         </label>
                         <div className="w-full">
                             <input
-                                className="bg-gray-400 text-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-gray-400 text-dark shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="tokenBalance"
                                 type="text"
                                 value={formatNumber(currentBalance)}
@@ -287,7 +287,7 @@ const Transfer = (props) => {
                         </label>
                         <div className="w-full">
                             <input
-                                className="bg-gray-400 text-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-gray-400 text-dark shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="tokenBalance"
                                 type="text"
                                 value={displayName}
@@ -302,7 +302,7 @@ const Transfer = (props) => {
                         </label>
                         <div className="w-full">
                             <input
-                                className="bg-white text-dark shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                className="bg-white text-dark shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                 id="tokenBalance"
                                 type="text"
                                 value={amount}

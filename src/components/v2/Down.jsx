@@ -28,7 +28,7 @@ const Down = () => {
             {/* Card Container */}
             <div className="card-container">
                 <div className="card-items">
-                    <h1 className="text-white text-[48px]">Documents</h1>
+                    <h1 className="text-white text-[46px]">Documents</h1>
                     <div className="card-items-down">
                         {["Introduction", "Overview"].map(
                             (title) => (
@@ -46,7 +46,7 @@ const Down = () => {
             {/* Card Container */}
             <div className="card-container">
                 <div className="card-items">
-                    <h1 className="text-white text-[48px]">Hashrate</h1>
+                    <h1 className="text-white text-[46px]">Hashrate</h1>
                     <h4 className="text-white text-small italic">Coming Soon</h4>
                 </div>
             </div>

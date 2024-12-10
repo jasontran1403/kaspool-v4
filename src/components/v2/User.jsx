@@ -132,49 +132,49 @@ const User = (props) => {
           <div className="card-content-transaction info-details-item pt-[20px] pb-[10px]">
             <label className="text-white">Connected Wallet Address</label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" placeholder="Connected wallet address..." value={props.usdtWallet} readOnly disabled />
           </div>
 
           <div className="card-content-transaction info-details-item pb-[10px]">
             <label className="text-white">Kaspa Wallet Address</label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" placeholder="KASPA wallet address" value={kaspaWallet} onChange={(e) => setKaspaWallet(e.target.value)} />
           </div>
 
           <div className="card-content-transaction info-details-item pb-[10px]">
             <label className="text-white">Total Sales</label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" value={`${formatNumber(props.totalSales)}`} readOnly disabled />
           </div>
 
           <div className="card-content-transaction info-details-item pb-[10px]">
             <label className="text-white">Maxout</label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" value={`${formatNumber(props.maxout)}`} readOnly disabled />
           </div>
 
           <div className="card-content-transaction info-details-item pb-[10px]">
             <label className="text-white">Sponsor</label>
             <input
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" value={props.root} readOnly disabled />
           </div>
 
           <div className="card-content-transaction info-details-item pb-[10px]">
             <label className="text-white">Left reflink</label>
             <input
-              className="cursor-pointer shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="cursor-pointer shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" value={props.leftRefLink} onClick={() => handleCopyRefLink(props.leftRefLink, "left")} readOnly />
           </div>
 
           <div className="card-content-transaction info-details-item mb-[20px]">
             <label className="text-white">Right reflink</label>
             <input
-              className="cursor-pointer shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              className="cursor-pointer shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               type="text" value={props.rightRefLink} onClick={() => handleCopyRefLink(props.rightRefLink, "right")} readOnly />
           </div>
         </div>

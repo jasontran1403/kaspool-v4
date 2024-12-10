@@ -1,5 +1,8 @@
 const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
     const formatString = (input) => {
+        if (input === "User Information") {
+            return "user";
+        }
         return input.replace(" ", "");
     }
     return (
@@ -8,7 +11,7 @@ const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
                 listNav.map((tab) => (
                     <div
                         key={tab}
-                        className={`tab ${selectedTab === tab ? "expanded" : ""}`}
+                        className={`tab ${selectedTab === "User Information" ? "user-nav" : ""} ${selectedTab === tab ? "expanded" : ""}`}
                         onClick={() => handleTabClick(tab, type)}
                     >
                         <img
@@ -16,7 +19,7 @@ const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
                             src={`/iconmenu/${selectedTab === tab ? "white" : "black"}/${formatString(tab).toLowerCase()}.png`}
                             alt={tab}
                         />
-                        <span className="text">{tab}</span>
+                        <span className={`text ${selectedTab === "User Information" ? "user-nav-text" : ""}`} >{tab}</span>
                     </div>
                 ))
             }

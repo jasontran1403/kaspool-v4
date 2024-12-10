@@ -46,7 +46,7 @@
   z-index: 1000;
   position: relative;
   height: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .tab img {
@@ -65,7 +65,7 @@
   border-radius: 20px;
   margin: 0 auto;
   height: 40px;
-  width: 40px;
+  width: 60px;
   text-align: center;
 }
 
@@ -74,14 +74,28 @@
   animation: width-animation .45 ease-in-out forwards;
 }
 
+.user-nav {
+  width: 200px!important;
+  justify-content: flex-start;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.user-nav-text {
+  text-wrap: nowrap;
+}
+
 .tab.expanded .text {
   animation: smooth-animation .45s ease-in-out forwards;
   display: block;
+  padding-left: 2px;
+  width: auto;
 }
 
 .tab.expanded img {
   animation: color-animation .45s ease-in-out forwards;
   display: block;
+  padding-right: 2px;
 }
 
 @keyframes smooth-animation {
@@ -222,53 +236,25 @@ input[type="password"] {
 
 .button-89,
 .css-8xdgr2 {
-  --b: 3px!important;
-  /* border thickness */
-  --s: .45em!important;
-  /* size of the corner */
-  --color: #ffffff!important;
+  color: #ffffff!important;
 
   padding: calc(.5em + var(--s)) calc(.9em + var(--s))!important;
-  color: var(--color)!important;
-  --_p: var(--s)!important;
-  background:
-    conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p))!important;
+  border: 1px solid #ccc;
 
-  outline: var(--b) solid #0000!important;
-  outline-offset: .6em!important;
   font-size: 16px!important;
-
-  border: 0!important;
-
-  user-select: none!important;
-  -webkit-user-select: none!important;
-  touch-action: manipulation!important;
-  transition: .3s linear !important;
-  border-radius: 0px!important;
+  padding: 20px!important;
+  border-radius: 20px!important;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5)!important;
+  backdrop-filter: blur(5px)!important;
 }
 
-.button-89:hover,
-.button-89:focus-visible,
-.css-8xdgr2:hover,
-.css-8xdgr2:focus-visible {
-  --_p: 0px!important;
-  outline-color: var(--color)!important;
-  outline-offset: .05em!important;
-  transform: scale(1.1)!important;
-}
-
-.button-89:active,
-.css-8xdgr2:active {
-  background: var(--color)!important;
-  color: #fff!important;
-}
 
 .fadeIn {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
   height: 100%;
   /* animation: fadeIn-animation 0.3s ease-in-out forwards; */
 }
@@ -414,7 +400,7 @@ select {
 .dock {
   width: 90svw;
   border-radius: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .buttons {
@@ -429,8 +415,8 @@ select {
 
 .buttons label {
   position: relative;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -506,8 +492,8 @@ select {
 .buttons label img {
   position: relative;
   z-index: 10;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   filter: grayscale(1) brightness(0.8);
   border-radius: 50%;
   transition: filter 0.15s ease;
