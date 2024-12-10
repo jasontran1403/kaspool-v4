@@ -5,13 +5,19 @@ const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
         }
         return input.replace(" ", "");
     }
+
+    const className = `${selectedTab.toLowerCase()}-nav`;
+
     return (
         <div className="bottom-tap-bar">
             {
                 listNav.map((tab) => (
                     <div
                         key={tab}
-                        className={`tab ${selectedTab === "User Information" ? "user-nav" : ""} ${selectedTab === tab ? "expanded" : ""}`}
+                        className={`tab 
+        ${selectedTab === "User Information" ? "user-nav" : ""}
+        ${selectedTab === tab && ["Affiliate", "Binary", "Direct"].includes(tab) ? "affiliate-nav" : ""}
+        ${selectedTab === tab ? "expanded" : ""}`}
                         onClick={() => handleTabClick(tab, type)}
                     >
                         <img

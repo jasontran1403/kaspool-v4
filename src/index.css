@@ -22,6 +22,10 @@
   background: url(../src/assets/background/bg12.jpg) center center / cover no-repeat;
 }
 
+.affiliate-nav {
+  width: 200px!important;
+}
+
 .page-container > :last-child {
   margin-top: auto; /* Đẩy phần tử cuối xuống đáy */
 }

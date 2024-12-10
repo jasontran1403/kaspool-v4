@@ -189,11 +189,18 @@ const Home = () => {
                     <TrustWalletConnect />
                 </div>
                 {selectedCheckbox === "das" ?
-                    <img
-                        src={`/${rank}.png`}
-                        alt="kaspool"
-                        style={{ width: "100px", height: "100px" }}
-                    />
+                    <div className="relative flex flex-row">
+                        <img
+                            src={`/${rank}.png`}
+                            alt="kaspool"
+                            style={{ width: "70px", height: "70px", marginTop: "10px" }}
+                        />
+                        {rank > 0 && (
+                            <span className="absolute top-[5px] right-[5px] bg-red-500 text-white text-xs font-bold rounded-full px-2 py-1">
+                                {rank}
+                            </span>
+                        )}
+                    </div>
                     :
                     <img
                         src={logo}
