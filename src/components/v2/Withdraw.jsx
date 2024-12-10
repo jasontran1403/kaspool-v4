@@ -368,7 +368,7 @@ const Withdraw = (props) => {
                                     {currency}
                                 </span>
                             </div>
-                            {networkSelected == 2 && <small style={{ fontSize: "12px", fontStyle: "italic", color: "white", textAlign: "right" }}>Current KAS Price 1KAS ~ {kasPrice.toFixed(5)}USDT</small>}
+                            {networkSelected == 2 && <small style={{ fontSize: "12px", fontStyle: "italic", color: "white", textAlign: "left" }}>Current KAS Price 1KAS ~ {kasPrice.toFixed(5)}USDT</small>}
                         </div>
                     </div>
 
@@ -395,7 +395,7 @@ const Withdraw = (props) => {
                                     {currency}
                                 </span>
                             </div>
-                            <small style={{ fontSize: "12px", fontStyle: "italic", color: "white", textAlign: "right" }}>Fee 2% of total withdrawal amount, min is 1.00USDT</small>
+                            <small style={{ fontSize: "12px", fontStyle: "italic", color: "white", textAlign: "left" }}>Fee 2% of total withdrawal amount, min is 1.00USDT</small>
                         </div>
                     </div>
 
