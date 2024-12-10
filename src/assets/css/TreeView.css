@@ -119,6 +119,25 @@ svg.cursor-pointer {
     /* Change cursor to pointer on hover */
 }
 
+@media screen and (max-width: 768px) {
+    .glass {
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(5px);
+      border: 1px solid #ccc;
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+    }
+  }
+
 /* Glass morph effect on hover */
 .glass:hover {
     background: rgba(255, 255, 255, 0.5);

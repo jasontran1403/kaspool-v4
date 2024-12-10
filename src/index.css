@@ -23,13 +23,14 @@
 }
 
 .affiliate-nav {
-  width: 50svw!important;
-  margin-left: 10px!important;
-  margin-right: 10px!important;
+  width: 50svw !important;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
 }
 
-.page-container > :last-child {
-  margin-top: auto; /* Đẩy phần tử cuối xuống đáy */
+.page-container> :last-child {
+  margin-top: auto;
+  /* Đẩy phần tử cuối xuống đáy */
 }
 
 .card-blue-green {
@@ -95,12 +96,12 @@
 .tab.expanded {
   background-color: rgb(0, 0, 0);
   animation: width-animation .45 ease-in-out forwards;
-  
+
 }
 
 .das-nav {
-  max-width: 35svw!important;
-  width: 35svw!important;
+  max-width: 35svw !important;
+  width: 35svw !important;
 }
 
 .user-nav {
@@ -123,7 +124,7 @@
 }
 
 .text-green {
-  color: green!important;
+  color: green !important;
 }
 
 .status {
@@ -132,7 +133,7 @@
 
 .input-white {
   border: 1px solid #ccc;
-  color: black!important;
+  color: black !important;
   background-color: rgb(218, 213, 213);
 }
 
@@ -141,12 +142,12 @@
 }
 
 .text-red {
-  color: rgb(245, 110, 60)!important;
+  color: rgb(245, 110, 60) !important;
 
 }
 
 .text-yellow {
-  color: yellow!important;
+  color: yellow !important;
 }
 
 
@@ -259,6 +260,25 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .affiliate-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ccc;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }
+}
+
 .card-container .card-items-down {
   position: relative;
   border-radius: 10px;
@@ -274,7 +294,8 @@ input[type="text"],
 input[type="number"],
 input[type="email"],
 input[type="password"] {
-    font-size: 16px; /* Đặt font-size lớn hơn hoặc bằng 16px */
+  font-size: 16px;
+  /* Đặt font-size lớn hơn hoặc bằng 16px */
 }
 
 .card-container .card-items .card-content {
@@ -302,42 +323,42 @@ input[type="password"] {
 
 .button-89,
 .css-8xdgr2 {
-  color: #ffffff!important;
+  color: #ffffff !important;
 
-  padding: calc(.5em + var(--s)) calc(.9em + var(--s))!important;
-  border: 1px solid #ccc!important;
-  font-size: 16px!important;
-  padding: 20px 50px 20px 50px!important;
-  border-radius: 20px!important;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5)!important;
-  backdrop-filter: blur(5px)!important;
-  background: rgba(255, 255, 255, 0.1)!important;
-  height: 45px!important;
-  display: flex!important;
-  flex-direction: row!important;
-  justify-content: center!important;
-  align-items: center!important;
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s)) !important;
+  border: 1px solid #ccc !important;
+  font-size: 16px !important;
+  padding: 20px 50px 20px 50px !important;
+  border-radius: 20px !important;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(5px) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  height: 45px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .css-8xdgr2 {
-  margin-top: 10px!important;
-  min-width: 140px!important;
+  margin-top: 10px !important;
+  min-width: 140px !important;
 }
 
 .button-89:hover,
 .button-89:focus-visible,
 .css-8xdgr2:hover,
 .css-8xdgr2:focus-visible {
-  --_p: 0px!important;
-  outline-color: var(--color)!important;
-  outline-offset: .05em!important;
-  transform: scale(1.1)!important;
+  --_p: 0px !important;
+  outline-color: var(--color) !important;
+  outline-offset: .05em !important;
+  transform: scale(1.1) !important;
 }
 
 .button-89:active,
 .css-8xdgr2:active {
-  background: var(--color)!important;
-  color: #fff!important;
+  background: var(--color) !important;
+  color: #fff !important;
 }
 
 .fadeIn {
@@ -359,12 +380,12 @@ input[type="password"] {
 }
 
 input {
-  border-radius: 20px!important;
-  padding-right: 20px!important;
+  border-radius: 20px !important;
+  padding-right: 20px !important;
 }
 
 select {
-  border-radius: 20px!important;
+  border-radius: 20px !important;
 }
 
 .tokenBalance {
