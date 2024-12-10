@@ -89,7 +89,7 @@ const TrustWalletConnect = ({ transparent, label }) => {
       if (localStorage.getItem("walletAddress") !== activeAccount.address) {
         toast.success("Connect wallet success", {
           position: "top-right",
-          autoClose: 1000,
+          autoClose: 1500,
           onClose: (() => {
             window.location.reload();
           })

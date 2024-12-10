@@ -511,6 +511,11 @@ body {
   flex-direction: column-reverse; */
 }
 
+.Toastify {
+  position: absolute;
+  z-index: 99999999;
+}
+
 .Toastify__toast {
   background: linear-gradient(50deg, #fff, #999); /* Tạo gradient */
   color: #555;
