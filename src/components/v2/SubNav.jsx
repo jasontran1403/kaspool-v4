@@ -15,6 +15,9 @@ const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
                         onClick={() => handleTabClick(tab, type)}
                     >
                         <img
+                            style={{
+                                width: formatString(selectedTab) === "user" ? "25px" : undefined,
+                            }}
                             className={`icon-${tab.toLowerCase()}`}
                             src={`/iconmenu/${selectedTab === tab ? "white" : "black"}/${formatString(tab).toLowerCase()}.png`}
                             alt={tab}
