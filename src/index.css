@@ -198,7 +198,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 .info-details-item {
@@ -342,7 +342,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 .cyptocurrency-currency {
