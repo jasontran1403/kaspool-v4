@@ -19,7 +19,6 @@ export default function Router() {
     const refcode = refcodeMatch ? refcodeMatch[1] : null;
     // Initialize with the value from localStorage
     const [isConnectedToWallet, setIsConnectedToWallet] = useState(() => {
-        console.log(localStorage.getItem("is_in_tree"));
         return (
             localStorage.getItem("walletAddress") &&
             localStorage.getItem("publicKey") &&

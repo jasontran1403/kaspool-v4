@@ -15,9 +15,8 @@
 }
 
 .card-blue-green {
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
+  background: transparent;
+  padding: 20px;
 }
 
 .top-container {
@@ -90,6 +89,34 @@
 .user-nav-text {
   text-wrap: nowrap;
 }
+
+.text-green {
+  color: white!important;
+  font-weight: bolder;
+  background-color: green;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+.text-red {
+  color: white!important;
+  font-weight: bolder;
+  background-color: rgb(245, 110, 60);
+  padding: 10px;
+  border-radius: 20px;
+
+}
+
+.text-yellow {
+  color: white!important;
+  font-weight: bolder;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
 
 .tab.expanded .text {
   animation: smooth-animation .45s ease-in-out forwards;

@@ -245,7 +245,9 @@ const Home = () => {
                     kaspaWallet={kaspaWallet}
                 />}
 
-            {selectedCheckbox === 'his' && <His />}
+            {selectedCheckbox === 'his' && <His 
+                selectedHisTab={selectedHisTab}
+            />}
 
             {selectedCheckbox === 'down' && <Down />}
 

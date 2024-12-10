@@ -95,10 +95,10 @@ const TransactionTableV2Mining = ({
             >
               <div className="mb-4 flex flex-col justify-between gap-8 md:flex-row md:items-center">
                 <div className="flex w-full ">
-                  <div className="w-full md:w-72 relative">
+                  <div className="w-full md:w-72 relative ">
                     <Input
                       placeholder="Search by code"
-                      className="pl-4 ml-20 w-3/4 pr-10 rounded"
+                      className="pl-4 ml-20 w-3/4 pr-10 rounded px-3 py-3"
                       value={searchTerm}
                       onChange={(e) => {
                         setSearchTerm(e.target.value);
@@ -116,11 +116,11 @@ const TransactionTableV2Mining = ({
                     {TABLE_HEAD.map((head) => (
                       <th
                         key={head}
-                        className="border-y border-blue-gray-100 bg-blue-gray-50/50 p-4"
+                        className="border-y p-4"
                       >
                         <Typography
                           variant="small"
-                          color="blue-gray"
+                          color="white"
                           className="font-normal leading-none opacity-70"
                         >
                           {head}
@@ -132,7 +132,6 @@ const TransactionTableV2Mining = ({
                 <tbody className="min-h-[20rem]">
                   {currentRows.map(
                     ({ code, capital, currency, date, status }, index) => {
-                      console.log(status);
                       const isLast = index === currentRows.length - 1;
                       const classes = isLast
                         ? "pt-4 pl-4 pr-4"
@@ -143,7 +142,7 @@ const TransactionTableV2Mining = ({
                           <td className={classes}>
                             <Typography
                               variant="small"
-                              color="blue-gray"
+                              color="white"
                               className="font-normal"
                             >
                               {code}
@@ -152,7 +151,7 @@ const TransactionTableV2Mining = ({
                           <td className={classes}>
                             <Typography
                               variant="small"
-                              color="blue-gray"
+                              color="white"
                               className="font-normal"
                             >
                               {formatDate(date)}
@@ -161,7 +160,7 @@ const TransactionTableV2Mining = ({
                           <td className={classes}>
                             <Typography
                               variant="small"
-                              color="blue-gray"
+                              color="white"
                               className="font-normal"
                             >
                               {formatNumber(capital)}
@@ -170,7 +169,7 @@ const TransactionTableV2Mining = ({
                           <td className={classes}>
                             <Typography
                               variant="small"
-                              color="blue-gray"
+                              color="white"
                               className={`font-normal ${
                                 status === "Running" ? "text-green" : "text-red"
                               }`}
@@ -189,6 +188,7 @@ const TransactionTableV2Mining = ({
               <div className="flex items-center gap-2">
                 <Button
                   variant="outlined"
+                  color="white"
                   size="sm"
                   onClick={handlePreviousPage}
                   disabled={currentPage === 1}
@@ -196,13 +196,14 @@ const TransactionTableV2Mining = ({
                   Previous
                 </Button>
 
-                <Typography variant="small" color="blue-gray">
+                <Typography variant="small" color="white">
                   Page {currentPage} of {totalPages}
                 </Typography>
 
                 <Button
                   variant="outlined"
                   size="sm"
+                  color="white"
                   onClick={handleNextPage}
                   disabled={currentPage === totalPages}
                 >

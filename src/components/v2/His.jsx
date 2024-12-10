@@ -1,3 +1,6 @@
+import { useState, useEffect } from "react";
+import Axios from "axios";
+import { API_ENDPOINT } from "../../constants";
 import TransactionTableV2Mining from "../TransactionTableV2Mining";
 import TransactionTableV2Withdraw from "../TransactionTableV2Withdraw";
 import TransactionTableV2Claim from "./TransactionTableV2Claim";
@@ -7,8 +10,12 @@ const TABLE_HEAD_CLAIM = ["System Code", "Date", "Amount", "Status"];
 const TABLE_HEAD_WITHDRAW = ["System Code", "Date", "Amount", "Status", "To"];
 const TABLE_HEAD_TRANSFER = ["System Code", "Date", "Amount", "Status", "Note"];
 
-const His = () => {
+const His = (props) => {
   const [listTransaction, setListTransaction] = useState([]);
+  const [listClaim, setListClaim] = useState([]);
+  const [listWithdraw, setListWithdraw] = useState([]);
+  const [listTransfer, setListTransfer] = useState([]);
+
 
   useEffect(() => {
     let config = {
@@ -29,9 +36,66 @@ const His = () => {
       });
   }, []);
 
+  useEffect(() => {
+    let config = {
+      method: "get",
+      url: `${API_ENDPOINT}management/claim-history/${localStorage.getItem("walletAddress")}`,
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+        "ngrok-skip-browser-warning": "69420",
+      },
+    };
+
+    Axios.request(config)
+      .then((response) => {
+        setListClaim(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+  
+  useEffect(() => {
+    let config = {
+      method: "get",
+      url: `${API_ENDPOINT}management/withdraw-history/${localStorage.getItem("walletAddress")}/1`,
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+        "ngrok-skip-browser-warning": "69420",
+      },
+    };
+
+    Axios.request(config)
+      .then((response) => {
+        setListWithdraw(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
+  useEffect(() => {
+    let config = {
+      method: "get",
+      url: `${API_ENDPOINT}management/transfer-history/${localStorage.getItem("walletAddress")}`,
+      headers: {
+        Authorization: `Bearer ${localStorage.getItem("access_token")}`,
+        "ngrok-skip-browser-warning": "69420",
+      },
+    };
+
+    Axios.request(config)
+      .then((response) => {
+        setListTransfer(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   return (
     <>
-      {props.selectedDasTab === "Mining" && (
+      {props.selectedHisTab === "Mining" && (
         <TransactionTableV2Mining
           className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
           TABLE_HEAD={TABLE_HEAD_MINING}
@@ -39,27 +103,27 @@ const His = () => {
         />
       )}
 
-      {props.selectedDasTab === "Claim" && (
+      {props.selectedHisTab === "Claim" && (
         <TransactionTableV2Claim
           className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
           TABLE_HEAD={TABLE_HEAD_CLAIM}
-          TABLE_ROWS={listTransaction}
+          TABLE_ROWS={listClaim}
         />
       )}
 
-      {props.selectedDasTab === "Withdraw" && (
+      {props.selectedHisTab === "Withdraw" && (
         <TransactionTableV2Withdraw
           className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
           TABLE_HEAD={TABLE_HEAD_WITHDRAW}
-          TABLE_ROWS={listTransaction}
+          TABLE_ROWS={listWithdraw}
         />
       )}
 
-      {props.selectedDasTab === "Transfer" && (
+      {props.selectedHisTab === "Transfer" && (
         <TransactionTableV2Transfer
           className="w-full flex justify-center items-center pt-[20px] pb-[20px]"
           TABLE_HEAD={TABLE_HEAD_TRANSFER}
-          TABLE_ROWS={listTransaction}
+          TABLE_ROWS={listTransfer}
         />
       )}
     </>
