@@ -250,7 +250,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid rgba(255, 255, 255, 0.5); */
   backdrop-filter: blur(5px);
   border: 1px solid #ccc;
   width: 90%;
@@ -348,17 +347,7 @@ input[type="password"] {
   align-items: center;
   gap: 16px;
   height: 100%;
-  /* animation: fadeIn-animation 0.3s ease-in-out forwards; */
 }
-/* 
-@keyframes fadeIn-animation {
-  0% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
 
 .card-content-transaction {
   display: flex;
@@ -449,15 +438,8 @@ select {
   justify-content: center;
   align-items: center;
   height: 50px;
-  /* Chiều cao cố định */
   line-height: 1.5;
-  /* Chiều cao dòng để kiểm soát khoảng cách giữa các dòng */
   overflow: hidden;
-  /* Ẩn phần nội dung bị tràn */
-  word-wrap: break-word;
-  /* Đưa từ xuống dòng nếu quá dài */
-  text-overflow: ellipsis;
-  /* Thêm dấu "..." nếu cần (tùy chọn) */
 }
 
 .cyptocurrency-currency img {
