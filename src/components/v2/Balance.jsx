@@ -43,7 +43,7 @@ const Balance = (props) => {
                     ].map(({ name, icon }) => (
                         <div key={name} className="card-content">
                             <div className="cyptocurrency-currency">
-                                <img src={`../src/assets/icons/${icon}`} alt={name} />
+                                <img src={`/icons/${icon}`} alt={name} />
                                 <h4>{name}</h4>
                             </div>
                             <div className="cyptocurrency-balance">
