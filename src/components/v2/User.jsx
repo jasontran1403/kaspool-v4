@@ -129,7 +129,7 @@ const User = (props) => {
               type="text" placeholder="Display name, default is xxxx...xxxx" value={displayName} onChange={(e) => setDisplayName(e.target.value)} />
           </div>
 
-          <div className="card-content-transaction info-details-item pt-[30px] pb-[10px]">
+          <div className="card-content-transaction info-details-item pt-[15px] pb-[10px]">
             <label className="text-white">Connected Wallet Address</label>
             <input
               className="rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -171,7 +171,7 @@ const User = (props) => {
               type="text" value={props.leftRefLink} onClick={() => handleCopyRefLink(props.leftRefLink, "left")} readOnly />
           </div>
 
-          <div className="card-content-transaction info-details-item mb-[20px]">
+          <div className="card-content-transaction info-details-item mb-[10px]">
             <label className="text-white">Right reflink</label>
             <input
               className="cursor-pointer shadow appearance-none  rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"

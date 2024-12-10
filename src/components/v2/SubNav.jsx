@@ -18,6 +18,7 @@ const SubNav = ({ listNav, selectedTab, handleTabClick, type }) => {
                             ${selectedTab === "User Information" ? "user-nav" : ""}
                             ${selectedTab === tab && ["Affiliate", "Binary", "Direct"].includes(tab) ? "affiliate-nav" : ""}
                             ${selectedTab === tab && ["Mining", "Claim", "Withdraw", "Transfer"].includes(tab) ? "his-nav" : ""}
+                            ${selectedTab === tab && ["Balance", "Mining", "Claim", "Withdraw", "Transfer"].includes(tab) ? "das-nav" : ""}
                             ${selectedTab === tab ? "expanded" : ""}`}
                         onClick={() => handleTabClick(tab, type)}
                     >

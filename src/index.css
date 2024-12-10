@@ -95,6 +95,12 @@
 .tab.expanded {
   background-color: rgb(0, 0, 0);
   animation: width-animation .45 ease-in-out forwards;
+  
+}
+
+.das-nav {
+  max-width: 35svw!important;
+  width: 35svw!important;
 }
 
 .user-nav {
