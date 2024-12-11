@@ -191,7 +191,7 @@ const Tree = () => {
         <div className={`node  ${!displayName ? "placeholder" : ""} `}>
           {displayName ? (
             <a
-              className="glass card-blue-green"
+              className="glass-2 card-blue-green"
               onClick={() => {
                 handleClick(node.userInfo.walletAddress);
               }}
@@ -250,14 +250,14 @@ const Tree = () => {
     <div className={`tree  ${currentShow == 3 ? "tree-2" : currentShow == 4 ? "tree-3" : "tree"} animation-show-dashboard tree-view-item`}>
       <div className="glass-button-container">
         <button
-          className="glass-button"
+          className="glass-button-2"
           onClick={handleGoBack}
           disabled={prevWallets.length === 0}
         >
           Back
         </button>
 
-        <div className="glass-button">
+        <div className="glass-button-2">
           <input
             style={{ backgroundColor: "transparent", width: "100%", border: "none", outline: "none" }}
             type="text"

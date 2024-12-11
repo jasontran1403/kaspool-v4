@@ -28,7 +28,7 @@ const Affiliate = (props) => {
             <div className="card-container">
                 <div className="card-items-affiliate">
                     {data.map(({ name, id }) => (
-                        <div key={name} className="affiliate-content">
+                        <div key={name} className="affiliate-content-2" >
                             <div className="cyptocurrency-currency-affiliate text-center">
                                 <h4>{name}</h4>
                             </div>

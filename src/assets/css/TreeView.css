@@ -52,9 +52,9 @@
 }
 
 svg.cursor-pointer {
-    position: absolute;
-    left: 90%;
-    top: 30%;
+    position: relative;
+    right: 0;
+    top: 0;
     z-index: 999999;
 }
 .glass-button {
@@ -188,28 +188,35 @@ ul li a {
 
 .glass-button {
     background: rgba(255, 255, 255, 0.1);
-    /* Light background with transparency */
     border: 1px solid rgba(255, 255, 255, 0.3);
-    /* Light border */
     border-radius: 10px;
-    /* Rounded corners */
     color: rgb(255, 255, 255) !important;
-    /* Text color */
     padding: 10px 10px;
-    /* Padding for the button */
     font-size: 16px;
-    /* Font size */
     width: auto;
     cursor: pointer;
-    /* Pointer on hover */
     backdrop-filter: blur(10px);
-    /* Blur effect for glass morphism */
     transition: all 0.3s ease;
-    /* Smooth transition */
     margin-top: 2%;
-    /* Margin at the top */
     margin-left: 5%;
-    /* Margin on the left */
+    z-index: 9999;
+}
+
+.glass-button-2 {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: rgb(255, 255, 255) !important;
+    padding: 10px 10px;
+    font-size: 16px;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 5%;
     z-index: 9999;
 }
 
