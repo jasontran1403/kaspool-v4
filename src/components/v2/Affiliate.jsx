@@ -28,7 +28,7 @@ const Affiliate = (props) => {
             <div className="card-container">
                 <div className="card-items-affiliate">
                     {data.map(({ name, id }) => (
-                        <div key={name} className="affiliate-content" style={{ backgroundColor: "transparent", boxShadow: "20px 20px 50px rgba(0, 0, 0, 0.5)", backdropFilter: "blur(5px)" }}>
+                        <div key={name} className="affiliate-content">
                             <div className="cyptocurrency-currency-affiliate text-center">
                                 <h4>{name}</h4>
                             </div>

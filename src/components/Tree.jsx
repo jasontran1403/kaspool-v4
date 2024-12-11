@@ -251,7 +251,6 @@ const Tree = () => {
       <div className="glass-button-container">
         <button
           className="glass-button"
-          style={{ backgroundColor: "transparent", boxShadow: "20px 20px 50px rgba(0, 0, 0, 0.5)", backdropFilter: "blur(5px)" }}
           onClick={handleGoBack}
           disabled={prevWallets.length === 0}
         >
@@ -260,7 +259,7 @@ const Tree = () => {
 
         <div className="glass-button">
           <input
-            style={{ backgroundColor: "transparent",backdropFilter: "blur(5px)", width: "100%", border: "none", outline: "none" }}
+            style={{ backgroundColor: "transparent", width: "100%", border: "none", outline: "none" }}
             type="text"
             placeholder="Search by wallet address"
             value={findValue}
@@ -282,7 +281,7 @@ const Tree = () => {
 
 
       </div>
-      <ul className="tree-ul" style={{ backgroundColor: "transparent", boxShadow: "20px 20px 50px rgba(0, 0, 0, 0.5)", backdropFilter: "blur(5px)" }} >
+      <ul className="tree-ul"  >
         {renderTree(treeData)} {/* Render the entire tree */}
       </ul>
 
