@@ -44,7 +44,7 @@ const Affiliate = (props) => {
                             </div>
                         </div>
                     ))}
-                    <div className="card-items-affiliate">
+                    <div style={{ backgroundColor: "transparent", boxShadow: "20px 20px 50px rgba(0, 0, 0, 0.5)" }}>
                         <span>Test</span>
                     </div>
                 </div>
