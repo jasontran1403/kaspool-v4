@@ -1,5 +1,6 @@
 // export const API_ENDPOINT = "http://localhost:8889/api/v1/";
-export const API_ENDPOINT = "https://115.79.196.67:8889/api/v1/";
+// export const API_ENDPOINT = "https://115.79.196.67:8889/api/v1/";
+export const API_ENDPOINT = "https://7d2a-2405-4802-a43b-fd00-e9ee-28ba-9988-352e.ngrok-free.app/api/v1/";
 
 export const navLinks = [
   {
